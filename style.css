@@ -16,122 +16,85 @@ h1 {
 .menu {
     border: 1px solid rgb(83, 83, 168);
     margin: 20px;
-   
-}
-.menu-button {
     display: flex;
-    align-items: center;
     justify-content: center;
+}
+.menu__item {    
+    align-items: center;
+    padding: 1rem;
     
 }
-.menu-button--prvni {
-    padding: 1rem;
-}
-.menu-button--druhy {
-    padding: 1rem;
-}
-.menu-button--treti{
-    padding: 1rem;
-}
-.menu-button--ctvrty {
-    padding: 1rem;
-}
-.o_me {
+
+.portfolio {
     text-align: center;
 }
 
-.o_me--uvod {
+.portfolio__item {
+    padding: 1rem;
     display: flex;
     justify-content: center;
 }
 
-.o_me--zajmy {
-    display: flex;
-    justify-content: center;
-}
 
-.zkusenosti {
-    text-align: center;
-}
-.zkusenosti--studium {
-    display: flex;
-    justify-content: center;
-}
 
-.zkusenosti--praxe {
-    display: flex;
-    justify-content: center;
-}
-
-.zkusenosti--ukazky {
-    display: flex;
-    justify-content: center;
-}
-
-.fotogalerie {
+.fotografie {
     border: 1px solid rgb(83, 83, 168);
     margin: 20px;   
-}
-
-.fotogalerie--prvni {
     display: flex;
     justify-content: center;
+    margin: 2rem; 
+    padding: 5rem;
+    background-size: cover;
+    background-position: center center; 
+    }
+
+.fotografie__nadpis {
+    display: flex;
+    
+    }
+.fotografie__item {
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    
+
+}
+
+.fotografie__item--prvni {
     background-image: url('images/hyacint.jpg');
-    margin: 2rem; 
-    padding: 5rem;
-    background-size: cover;
-    background-position: center center; 
 }
 
-.fotogalerie--druha {
-    display: flex;
-    justify-content: center;
-    background-image: url('images/chrpa-louka.jpg');
-    margin: 2rem; 
-    padding: 5rem;
-    background-size: cover;
-    background-position: center center; 
+.fotografie__item--druha {
+    background-image: url('images/hyacint.jpg');
 }
 
-.fotogalerie--treti {
-    display: flex;
-    justify-content: center;
-    background-image: url('images/chrpa-detail.jpg');
-    margin: 2rem; 
-    padding: 5rem;   
-    background-size: cover;
-    background-position: center center; 
+.fotografie__item--treti {
+    background-image: url('images/hyacint.jpg'); 
 }
 
-.fotogalerie--ctvrta {
-    display: flex;
-    justify-content: center;
-    background-image: url('images/louka.jpg');
-    margin: 2rem; 
-    padding: 5rem;   
-    background-size: cover;
-    background-position: center center; 
+.fotografie__item--ctvrta {
+    background-image: url('images/hyacint.jpg');
+    
 }
 
 .kontakt {
     text-align: center;     
 }
 
-.kontakt_social {
+.kontakt__social {
     color: white;
     margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
         
 }
 
-.kontakt_social--facebook {
+.kontakt__social--facebook {
     background-color: rgb(34, 34, 99);
-    padding: 1rem;
-    border-radius: 10px;
-
+    
 }
 
-.kontakt_social--linkedin {
+.kontakt__social--linkedin {
     background-color: rgb(83, 83, 168);
-    padding: 1rem;
-    border-radius: 10px;
+    
 }

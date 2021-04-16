@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,38 +10,56 @@
 <body>
 
     <div class="menu">
-        <div class="menu-button">
-        <span class="menu-button--prvni">O mě</span>
-        <span class="menu-button--druhy">Zkušenosti</span>
-        <span class="menu-button--treti">Fotogalerie</span>
-        <span class="menu-button--ctvrty">Kontakt</span>
+        <div class="menu__item">
+        <span class="menu__item menu__item--prvni">O mě</span>
+        <span class="menu__item menu__item--treti">Fotogalerie</span>
+        <span class="menu__item menu__item--ctvrty">Kontakt</span>
         </div>
     </div>
-    <div class="o_me">
-        <h1>O mě</h1>
-        <span class="o_me--uvod">Úvodní text</span>
-        <span class="o_me--zajmy">Zájmy</span>
+    
+    <div class="portfolio">
+        <div class="portfolio__item">
+            <h1>O mě</h1>
+        </div>
+            <div class="portfolio__item portfolio__item--prvni">Úvodní text</div>
+            <div class="portfolio__item portfolio__item--druhy">Zájmy</div>
+            <div class="portfolio__item portfolio__item--treti">Studium</div>
+            <div class="portfolio__item portfolio__item--ctvrty">Praxe</div>
+            <div class="portfolio__item portfolio__item--paty">Ukázky práce</div>
+        </div>
+    <div class="fotografie">
+        <div class="fotografie__nadpis">
+            <h1>Fotogalerie</h1>
+        </div>
+        <div class="fotografie__item fotografie__item--prvni">První</div>
+        <div class="fotografie__item fotografie__item--druha">Druhá</div>
+        <div class="fotografie__item fotografie__item--treti">Třetí</div>
+        <div class="fotografie__item fotografie__item--ctvrta">Čtvrtá</div>
     </div>
-    <div class="zkusenosti">
-        <h1>Zkušenosti</h1>
-        <span class="zkusenosti--studium">Studium</span>
-        <span class="zkusenosti--praxe">Praxe</span>
-        <span class="zkusenosti--ukazky">Ukázky práce</span>
+
+    <div class="soubory">
+        <div class="soubory__item">
+            <h1>Soubory</h1>
+        </div>
+        <div class="soubory__item soubory__item--prvni"></div>
+        <div class="soubory__item soubory__item--druhý"></div>
+        <div class="soubory__item soubory__item--treti"></div>
     </div>
-    <div class="fotogalerie">
-        <h1>Fotogalerie</h1>
-        <span class="fotogalerie--prvni"></span>
-        <span class="fotogalerie--druha"></span>
-        <span class="fotogalerie--treti"></span>
-        <span class="fotogalerie--ctvrta"></span>
-    </div>
+
+
     <div class="kontakt">
-        <h1>Kontakt</h1>
-        <span class="kontakt">vera.vejrazkova@verkav.cz</span>
-        <div class="kontakt_social">
-        <span class="kontakt_social--facebook">Facebook</span>
-        <span class="kontakt_social--linkedin">Linkedin</span>
+        <div class="kontakt__item">
+            <h1>Kontakt</h1>
         </div>
+        <div class="kontakt__mail">
+        <li class="kontakt__mail kontakt__mail--email">vera.vejrazkova@verkav.cz</li>
+        </div>
+        <div class="kontakt__social">
+        <span class="kontakt__social kontakt__social--facebook">Facebook</span>
+        <span class="kontakt__social kontakt__social--linkedin">Linkedin</span>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
