@@ -1,0 +1,182 @@
+$bgPrimary: #c3d617;
+$bgSecondary: #ff6347;
+$bgThird:#6f20a3;
+$colorFacebook:#222263;
+$colorlinkedin:#5353a8;
+$borderRadius: 1rem;
+$doubleRemPadding: 2rem;
+$remPadding: 1rem;
+$fotoRepeat: no-repeat;
+$zarovnaniTextu: center;
+
+@mixin mainSettings {
+    padding: $borderRadius;
+    background-color: #c3d617;
+    background-repeat: no-repeat;
+   
+}
+
+@mixin fotoSettings {
+    display: grid;
+    padding-top: 2rem;
+    border: 1px solid #5353a8;   
+    margin: 2rem; 
+    padding: $doubleRemPadding;
+    height: 100vh;
+    background-position: center;
+    grid-template-columns: 4rem;
+    gap: 2rem;
+    grid-template-areas:
+        "head head side"
+        "main main side"
+        "foot foot foot"
+    
+
+}
+
+body {
+    @include mainSettings();
+    color:#32327c;
+    font-size: 16px;
+    grid-template-rows: 5rem;
+    font-family: 'Antonio', sans-serif;
+    background-position: center;
+   
+}
+
+h1 {
+    text-align: $zarovnaniTextu;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    background: $bgSecondary;   
+    justify-content: center; 
+
+    li {
+        list-style: none;
+    }
+}
+
+    
+
+}
+.menu__item {    
+    align-items: center;
+    padding: $doubleRemPadding;
+    
+}
+
+
+a:hover, a:active {
+    background-color: $bgThird;
+    color: #f5f5f5;
+    padding: $doubleRemPadding;
+  }
+
+
+.o-me {
+    @include mainSettings()
+    word-wrap: inherit;     
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    align-self: end;
+    background-image: url('images/elephant2.svg');
+    background-size: 70rem;
+    background-position: left;
+   
+
+}
+
+.portfolio {
+    @include mainSettings();
+
+    portfolio__item {
+        padding: $remPadding;
+        display: grid;
+        justify-self: center;
+
+        portfolio__item--prvni {
+            align-self: end;
+            
+        }
+    }
+}
+
+
+.fotografie {
+   @include fotoSettings();
+
+   fotografie__item {
+    background-position: center;
+    background-image: $fotoRepeat;   
+    
+    fotografie__item--prvni {
+        background-image: url('images/waves.svg');
+        background-size: 100%;
+        grid-area: head;
+    }
+    
+    fotografie__item--druha {
+        background-image: url('images/cranium-3244118.svg');
+        background-size: 25rem;
+        grid-area: side;
+        background-repeat: $fotoRepeat;
+    }
+    
+    fotografie__item--treti {
+        background-image: url('images/chrpa-detail.jpg'); 
+        grid-area: main;
+        background-size: cover;  
+    }
+    
+    fotografie__item--ctvrta {
+        background-image: url('images/chrpa-louka.jpg');
+        grid-area: foot;  
+        background-size: cover;  
+    }
+    
+}
+}
+
+    
+
+.kontakt {
+    display: grid;
+    text-align: $zarovnaniTextu;  
+    
+    kontakt__social {
+        color: #ffffff;
+        margin: 1rem;
+        padding: $remPadding;
+        border-radius: 10px;
+            
+    }
+    
+    kontakt__social--facebook {
+        background-color: $colorFacebook;
+        
+    }
+    
+    kontakt__social--linkedin {
+        background-color: $colorlinkedin;
+        
+    }
+}
+
+
+
+@media (min-width: 800px) { 
+
+.o-me {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(2, minmax(1rem, 1fr));
+    grid-template-rows: 1fr 1fr;
+
+}
+
+}
