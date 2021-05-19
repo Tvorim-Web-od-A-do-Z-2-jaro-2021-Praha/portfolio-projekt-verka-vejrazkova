@@ -1,0 +1,174 @@
+body {
+  padding: 1rem;
+  background-color: #c3d617;
+  background-repeat: no-repeat;
+  color: #32327c;
+  font-size: 16px;
+  -ms-grid-rows: 5rem;
+      grid-template-rows: 5rem;
+  font-family: 'Antonio', sans-serif;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ff6347;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu__item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+a:hover, a:active {
+  background-color: #6f20a3;
+  color: #f5f5f5;
+  padding: 2rem;
+}
+
+.o-me {
+  padding: 1rem;
+  background-color: #c3d617;
+  background-repeat: no-repeat;
+  word-wrap: inherit;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -ms-grid-row-align: end;
+      align-self: end;
+  background-image: url("images/elephant2.svg");
+  background-size: 70rem;
+  background-position: left;
+}
+
+.portfolio {
+  padding: 1rem;
+  background-color: #c3d617;
+  background-repeat: no-repeat;
+}
+
+.portfolio__item {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.portfolio__item--prvni {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.fotografie {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 2rem;
+  border: 1px solid #5353a8;
+  margin: 2rem;
+  padding: 2rem;
+  height: 100vh;
+  background-position: center;
+  -ms-grid-columns: 4rem;
+      grid-template-columns: 4rem;
+  gap: 2rem;
+      grid-template-areas: "head head side" "main main side" "foot foot foot";
+}
+
+.fotografie__item {
+  background-position: center;
+  background-image: no-repeat;
+}
+
+.fotografie__item--prvni {
+  background-image: url("images/waves.svg");
+  background-size: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: head;
+}
+
+.fotografie__item--druha {
+  background-image: url("images/cranium-3244118.svg");
+  background-size: 25rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: side;
+  background-repeat: no-repeat;
+}
+
+.fotografie__item--treti {
+  background-image: url("images/chrpa-detail.jpg");
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background-size: cover;
+}
+
+.fotografie__item--ctvrta {
+  background-image: url("images/chrpa-louka.jpg");
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: foot;
+  background-size: cover;
+}
+
+.kontakt {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+}
+
+.kontakt__social {
+  color: #ffffff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.kontakt__social--facebook {
+  background-color: #222263;
+}
+
+.kontakt__social--linkedin {
+  background-color: #5353a8;
+}
+
+@media (min-width: 800px) {
+  .o-me {
+    display: -ms-grid;
+    display: grid;
+    padding-top: 2rem;
+    -ms-grid-columns: (minmax(1rem, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(1rem, 1fr));
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
