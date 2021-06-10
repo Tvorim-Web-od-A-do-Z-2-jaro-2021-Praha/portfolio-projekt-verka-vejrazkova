@@ -1,0 +1,400 @@
+/*************BARVY**************/
+
+$bgPrimary:#fcfcfc; 
+$bgPrimaryLight: rgb(139, 93, 139);
+$bgSecondary: #4258A8;
+$bgThird: #6f20a3;
+
+/*************STYL ODSTAVCŮ***********/
+
+
+/*************PÍSMO***********/
+
+
+body {
+    background-color: $bgPrimary;
+    background-repeat: no-repeat;
+    color: #5A79E8;
+    font-size: 16px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+  }
+
+  header {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem auto 1rem auto;
+  padding-left: 3rem;  
+  color:  $bgThird;
+  }
+
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+
+ 
+  
+  
+/*****************MENU*************************/
+
+
+nav {
+  background: $bgSecondary;
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.menu {
+  
+  list-style-type: none;
+
+  menu__item {
+   padding: 1rem;
+  }
+}
+
+.menuToggle {
+  user-select: none;
+  text-transform: uppercase;
+}
+
+
+.menu li a {
+  display: flex;
+  padding: 1rem 0.5rem;
+}
+
+.menu li.subitem a {
+  padding: 1rem;
+}
+
+.item {  
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+
+
+
+  .o-me {
+    display: grid;
+
+      img {
+        border-radius: 50%;
+        position: relative;
+        width: 100%;
+      }
+
+      .popisek {
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        position: relative;
+        color: #ffffff;
+        animation: pulse 15s infinite;
+      }
+
+       
+      @keyframes pulse {
+        0% {
+         color: #ffffff;
+        }
+
+        50% {
+          color: #7a7777;
+        }
+        100% {
+          color: #7a7777;
+        }
+      }
+
+      h2 {
+        background: #4258A8;
+        padding: 1rem;
+        color: #f8f8f8;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        
+      }
+
+      
+     
+  }
+
+  
+
+  
+  .portfolio {
+    padding: 1rem;
+    background-color: $bgPrimary;
+    background-repeat: no-repeat;
+  }
+  
+  .portfolio__item {
+    padding: 1rem;
+  }
+  
+  .portfolio__item--prvni {
+    align-self: end;
+  }
+  
+
+  td {
+    padding: 2rem;
+    
+  }
+
+
+  .kontakt {
+    display: grid;
+    text-align: center;
+   
+  }
+
+  
+
+
+  .kontakt__social {
+    color: #ffffff;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  
+
+      svg {
+        margin: 0 1rem;
+        cursor: pointer;
+      }
+  
+      #fb-circle {
+        transition: all ease .5s;
+        transform-origin: center;
+  
+      }
+  
+     #fb:hover #fb-circle {
+        fill: transparent;
+        stroke-width: 2;
+        stroke-dasharray: 8;
+        transform: rotate(360deg);
+  
+  }
+  
+     #fb-circle #fb-path{
+        fill: #303FC9;
+  }
+
+     #fb-circle {
+        transition: all ease .5s;
+        transform-origin: center;
+  
+  }
+  
+     #fb:hover #fb-circle {
+        fill: transparent;
+        stroke-width: 2;
+        stroke-dasharray: 8;
+        transform: rotate(360deg);
+  
+  }
+  
+     #fb-circle #fb-path{
+        fill: #303FC9;
+  }
+
+    #insta:hover #insta-dot {
+      animation: flash .2s ease;
+    
+    }
+
+    @keyframes flash {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+
+
+  #twitter {
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+  #twitter:hover {
+    transform: rotate(180deg);
+  }
+
+
+  #linkedin {
+    background-color: #ffffff;
+    border-radius: 21px;    
+  }
+
+  #linkedin:hover {
+    animation: pulz 3s infinite;
+  }
+
+@keyframes pulz {
+  from {transform: scale(1);}
+  to {transform: scale(1.2);}
+ }
+ 
+.portfolio__item--prvni {
+
+  #software:hover #Vector_5,#Vector_7,#Vector_9,#Vector_11,#Vector_13,#Vector_15 {
+
+    animation: changeColor 3s infinite alternate;
+
+  }
+
+  @keyframes changeColor {
+    0% {
+      fill: #ffc0cb;
+    }
+
+    50% {
+      fill: #aeb11d;
+    }
+
+    100% {
+      fill: #17C7FF;
+    }
+  }
+
+
+  
+  #software:hover #Vector_4,#Vector_6,#Vector_8,#Vector_10,#Vector_12,#Vector_14 {
+
+    animation: changeColor2 3s infinite alternate;
+
+  }
+
+  @keyframes changeColor2 {
+    0% {
+      fill: #ac0420;
+    }
+
+    50% {
+      fill: #1c7456;
+    }
+
+    100% {
+      fill: #f0ff17;
+    }
+  }
+
+
+
+}
+
+
+.portfolio__item--druhy {
+  
+#energie:hover #oblak2,#oblak3,#oblak1 {
+  animation: pohyb 10s infinite;
+  }
+}
+  
+@keyframes pohyb {
+  0% {margin-left: 0px;}
+  50% {margin-left: 80px;}
+  100% {margin-left: 100px;}
+  }
+
+
+
+#programmer:hover #Monitor1,#Monitor3 {
+
+    animation: changeColor2 3s infinite alternate;
+
+  }
+
+  @keyframes changeColor2 {
+    0% {
+      fill: #ac0488;
+    }
+
+    50% {
+      fill: #1c7456;
+    }
+
+    100% {
+      fill: #feffef;
+    }
+  }
+
+  
+#programmer:hover #Monitor2 {
+
+  animation: changeColor2 3s infinite alternate;
+
+}
+
+@keyframes changeColor2 {
+  0% {
+    fill: #6384e0;
+  }
+
+  50% {
+    fill: #74221c;
+  }
+
+  100% {
+    fill: #dfe770;
+  }
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  background-color: $bgSecondary;
+  color: #ffffff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: $bgSecondary;
+}
+
+  @media (min-width: 800px) {
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+        li {
+          padding-left: 1.5rem;
+        }
+    }
+
+    nav {
+      justify-content: flex-end;
+    }
+
+    .o-me {
+      display: grid;
+      padding-top: 0rem;
+          grid-template-columns: repeat(2, minmax(1rem, 1fr));
+          grid-template-rows: 1fr 1fr;
+    }
+
+      
+
+  }
+  /*# sourceMappingURL=styles.css.map */
